@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Muwababy</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-white mx-auto">
+    <header class="px-10 md:px-[6%] bg-white mt-4 flex justify-between items-center p-4 text-black">
+        <div>
+            <img src="assets/muwa.png" alt="" class="h-8">
+        </div>
+        <div class="hidden md:flex flex-1 justify-center">
+            <nav class="space-x-6 lg:space-x-10 text-base lg:text-lg">
+                <a href="#" class="">Home</a>
+                <a href="#" class="">About Us</a>
+                <a href="#" class="">Stroller</a>
+                <a href="#" class="">Find Us</a>
+            </nav>
+        </div>
+        <div class="hidden md:flex justify-end">
+            <button class="bg-[#844D3E] text-white px-6 py-3 rounded-[20px]">Support</button>
+        </div>
+        <div class="md:hidden flex justify-end">
+            <button id="hamburger" class="flex items-center px-3 py-2 border rounded text-black border-black focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    
+    <div id="mobile-menu" class="hidden md:hidden bg-[#F6EDE4] border-t border-gray-200 mt-2">
+        <nav class="flex flex-col px-4 py-2 space-y-4">
+            <a href="#" class="">Home</a>
+                <a href="#" class="">About Us</a>
+                <a href="#" class="">Stroller</a>
+                <a href="#" class="">Find Us</a>
+        </nav>
+        <div class="flex flex-col p-4 space-y-2">
+            <button class="bg-[#844D3E] text-white px-6 py-3 rounded-[20px]">Support</button>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+    
+    <main class="px-10 md:px-[6%] flex items-center justify-center min-h-screen">
+        <div class="text-center space-y-6">
+            <p class="text-sm uppercase tracking-wide">Welcome to MUWABABY</p>
+            <h1 class="text-4xl lg:text-8xl md:text-6xl font-bold">Privacy Policy</h1>
+            <p class="w-full mx-auto text-sm text-justify">
+                We value your privacy and are committed to protecting your personal data. Your trust is important to us, and we are dedicated to safeguarding your information.
+            </p>
+        </div>
+    </main>
+
+    <section class="px-10 md:px-[6%] flex flex-col items-center justify-center mt-20 mb-20">
+        <div class="w-full h-[80vh] bg-gray-200 rounded-[50px] overflow-hidden relative">
+            <img 
+                src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/97176-02913_header_web__(5).png" 
+                alt="Image Description" 
+                class="w-full h-full object-cover"
+            />
+        </div>
+    </section>
+
+    <section class="px-10 md:px-[6%] flex flex-col items-center justify-center mt-20 mb-20 h-60 md:h-80">
+        <div class="text-center lg:w-3/4">
+            <p class="w-full mx-auto text-sm md:text-base text-justify">
+                MUWABABY respects your privacy and is committed to protecting your personal data in accordance with the Personal Data Protection Act 2010 (“PDPA”) of Malaysia. This Privacy Policy outlines how we collect, use, disclose, and store your personal data when you use our website, products, or services. By accessing or using our website, you agree to the terms outlined in this policy.
+            </p>
+        </div>
+    </section>
+
+    <section class="px-10 md:px-[6%] mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-[#EEE9E2] text-black p-6 rounded-[50px] flex flex-col justify-center items-center h-[350px] md:h-[400px] text-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">Collection of Personal Data</h2>
+            <p class="text-sm tracking-wide text-gray-700 mb-2 w-full md:w-3/4 mt-4">
+                We may collect the following personal data from you, depending on the nature of your interaction with us:
+            </p>
+        </div>
+        <div class="text-black text-justify text-sm md:text-base leading-relaxed">
+            <ul class="list-disc pl-6 md:pl-8 mt-4 space-y-2 text-justify">
+                <li><strong>Identity Information:</strong><br>Name, date of birth, NRIC/passport number, gender, marital status.</li>
+                <li><strong>Contact Information:</strong><br>Address, email address, phone number.</li>
+                <li><strong>Transaction Details:</strong><br>Purchase history, payment methods, billing, and shipping addresses.</li>
+                <li><strong>Demographic Information:</strong><br>Preferences, interests, and other relevant information for customer experience enhancement.</li>
+                <li><strong>Device and Browsing Data:</strong><br>IP address, browser type, operating system, and cookies to enhance website performance and user experience.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="px-10 md:px-[6%] mt-40 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-[#EEE9E2] text-black p-6 rounded-[50px] flex flex-col justify-center items-center h-[350px] md:h-[400px] text-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold w-3/4">Purpose of Collecting Personal Data</h2>
+            <p class="text-sm tracking-wide text-gray-700 mb-2 w-full md:w-3/4 mt-4">
+                Your personal data will be processed for the following purposes:
+            </p>
+        </div>
+        <div class="text-black text-justify text-sm md:text-base leading-relaxed">
+            <ul class="list-disc pl-6 md:pl-8 mt-4 space-y-2 text-justify">
+                <li>To deliver products and services that you purchase or request</li>
+                <li>To manage your account and provide customer support</li>
+                <li>To send updates about changes to our terms, policies, or services</li>
+                <li>To communicate promotional offers, special discounts, or new product launches</li>
+                <li>To improve our website, services, and product offerings based on your feedback and browsing behavior</li>
+                <li>To fulfill legal and regulatory obligations</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="px-10 md:px-[6%] mt-40 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-[#EEE9E2] text-black p-6 rounded-[50px] flex flex-col justify-center items-center h-[350px] md:h-[400px] text-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold w-3/4">Disclosure of Personal Data</h2>
+            <p class="text-sm tracking-wide text-gray-700 mb-2 w-full md:w-3/4 mt-4">
+                Your personal data may be shared with:
+            </p>
+        </div>
+        <div class="text-black text-justify text-sm md:text-base leading-relaxed">
+            <ul class="list-disc pl-6 md:pl-8 mt-4 space-y-2 text-justify">
+                <li>Service providers or third parties assisting in the delivery of our products and services (e.g., payment gateways, shipping companies)</li>
+                <li>Legal and regulatory bodies, if required by Malaysian law</li>
+                <li>Affiliates, business partners, or vendors for marketing or operational purposes</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="px-10 md:px-[6%] mt-40 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-[#EEE9E2] text-black p-6 rounded-[50px] flex flex-col justify-center items-center h-[350px] md:h-[400px] text-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold w-3/4">Data Retention</h2>
+        </div>
+        <div class="text-black text-justify text-sm md:text-base leading-relaxed w-full">
+            <p>
+                We will retain your personal data as long as necessary to fulfill the purposes stated above, or as required by law. Upon the completion of such purposes, your data will be securely deleted or anonymized.
+            </p>
+        </div>
+    </section>
+
+    <section class="px-10 md:px-[6%] mt-40 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-[#EEE9E2] text-black p-6 rounded-[50px] flex flex-col justify-center items-center h-[350px] md:h-[400px] text-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold w-3/4">Security of Personal Data</h2>
+        </div>
+        <div class="text-black text-justify text-sm md:text-base leading-relaxed w-full">
+            <p>
+                MUWABABY implements strict measures to safeguard your data, including administrative, physical, and technical security protocols. While we strive to protect your data, please note that no system is entirely immune to risks
+            </p>
+        </div>
+    </section>
+
+    <section class="px-10 md:px-[6%] mt-40 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-[#EEE9E2] text-black p-6 rounded-[50px] flex flex-col justify-center items-center h-[350px] md:h-[400px] text-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold w-3/4">Use of Cookies</h2>
+            <p class="text-sm tracking-wide text-gray-700 mb-2 w-full md:w-3/4 mt-4">
+                Cookies are small data files stored on your device to enhance your browsing experience. MUWABABY uses cookies for:
+            </p>
+        </div>
+        <div class="text-black text-justify text-sm md:text-base leading-relaxed">
+            <ul class="list-disc pl-6 md:pl-8 mt-4 space-y-2 text-justify">
+                <li>Website functionality and personalization</li>
+                <li>Tracking website traffic for analytics and improvements</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="px-10 md:px-[6%] mt-40 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-[#EEE9E2] text-black p-6 rounded-[50px] flex flex-col justify-center items-center h-[350px] md:h-[400px] text-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold w-3/4">Third-Party Links</h2>
+        </div>
+        <div class="text-black text-justify text-sm md:text-base leading-relaxed w-full">
+            <p>
+                Our website may contain links to external websites. MUWABABY is not responsible for the privacy practices of such websites. Please review the privacy policies of those third-party websites before sharing your data
+            </p>
+        </div>
+    </section>
+
+    <section class="px-10 md:px-[6%] mt-40 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-[#EEE9E2] text-black p-6 rounded-[50px] flex flex-col justify-center items-center h-[350px] md:h-[400px] text-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold w-3/4">Your Rights</h2>
+            <p class="text-sm tracking-wide text-gray-700 mb-2 w-full md:w-3/4 mt-4">
+                Under the PDPA, you have the right to:
+            </p>
+        </div>
+        <div class="text-black text-justify text-sm md:text-base leading-relaxed">
+            <ul class="list-disc pl-6 md:pl-8 mt-4 space-y-2 text-justify">
+                <li>Access and correct your personal data held by us</li>
+                <li>Withdraw your consent for direct marketing</li>
+                <li>Restrict the processing of your personal data under certain conditions</li>
+            </ul>
+            <p class="mt-6 text-sm md:text-base">To exercise these rights or inquire about your personal data, please contact us at:</p>
+            <ul class="list-disc pl-6 mt-4 space-y-2">
+                <li>Email: <a href="mailto:support@muwababy.com" class="text-[#844D3E]">support@muwababy.com</a></li>
+                <li>Phone: [Insert contact number]</li>
+                <li>Address: [Insert business address]</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="px-10 md:px-[6%] mt-40 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="bg-[#EEE9E2] text-black p-6 rounded-[50px] flex flex-col justify-center items-center h-[350px] md:h-[400px] text-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold w-3/4">Changes to Privacy Policy</h2>
+        </div>
+        <div class="text-black text-justify text-sm md:text-base leading-relaxed w-full">
+            <p>
+                MUWABABY may update this Privacy Policy from time to time to comply with legal or business changes. Any material updates will be communicated via our website. This Privacy Policy was last updated on 1/1/2025
+            </p>
+        </div>
+    </section>
+    
+    <footer class="bg-[#CCB9AA] p-6 py-20 mt-20">
+        <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+            <div class="flex justify-center items-center">
+                <img src="assets/muwa-removebg-preview.png" alt="Logo" class="w-3/5 h-auto">
+            </div>
+    
+            <div class="flex flex-col sm:flex-row sm:space-x-6 justify-center items-center">
+                <a href="#" class="text-black">Home</a>
+                <a href="#" class="text-black">About</a>
+                <a href="#" class="text-black">Find Us</a>
+                <a href="#" class="text-black">Shop</a>
+                <a href="#" class="text-black">Support</a>
+                <a href="#" class="text-black">Contact</a>
+            </div>
+
+            <div class="flex space-x-6 justify-center items-center">
+                <a href="#" class="bg-[#844D3E] text-white p-3 rounded-full w-12 h-12 flex justify-center items-center">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="bg-[#844D3E] text-white p-3 rounded-full w-12 h-12 flex justify-center items-center">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="bg-[#844D3E] text-white p-3 rounded-full w-12 h-12 flex justify-center items-center">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="bg-[#844D3E] text-white p-3 rounded-full w-12 h-12 flex justify-center items-center">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>                  
+        </div>
+
+        <div class="mt-6 text-center text-black font-semibold">
+            <p>© 2024 | Muwababy All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
