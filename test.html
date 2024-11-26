@@ -7,8 +7,20 @@
 </head>
 <body>
 
-    <?php include 'header.php'; ?>
+    <!-- The header will be loaded here -->
+    <div id="header-container"></div>
 
+    <!-- Your main content goes here -->
+    <h1>Welcome to the website!</h1>
 
+    <script>
+        // Load the header dynamically
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the header:', error));
+    </script>
 </body>
 </html>
