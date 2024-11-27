@@ -443,94 +443,47 @@
 
 
     <!--MAIN CONTENT HERE-->
-    <main class="px-10 md:px-[6%] flex flex-col items-center justify-center mt-20 mb-20">
-        <div class="w-full text-center mb-10">
-            <h1 class="text-4xl lg:text-6xl font-bold">
-                Muwababy Horsi Stroller
-            </h1>
-        </div>
-        <div class="w-full h-[80vh] bg-gray-200 rounded-[50px] overflow-hidden relative">
-            <img 
-                src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/97176-02913_header_web__(5).png" 
-                alt="Image Description" 
-                class="w-full h-full object-cover"
-            />
+    <main class="px-10 md:px-[6%] flex flex-col items-center justify-center mt-20 mb-20 h-screen">
+        <!-- Bento grid section -->
+        <div class="py-[80px] flex h-full w-full items-center justify-center">
+            <div class="grid h-full w-full gap-4 p-2 grid-cols-4 grid-rows-[2fr,1fr,1fr]">
+                <!-- Bento items -->
+                <div class="col-span-2 row-span-3 bg-pink-200 rounded-[50px] flex items-center justify-center min-h-[250px] sm:min-h-[300px] lg:min-h-[400px]">
+                    <img src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/95857-87213_61.png" alt="Salmon" class="w-full h-full object-cover rounded-[50px]" />
+                </div>
+                <div class="col-span-2 row-span-1 bg-lime-200 rounded-[50px] flex items-center justify-center min-h-[80px] sm:min-h-[120px] lg:min-h-[140px]">
+                    <img src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/95850-48533_Visuals_website_(4).png" alt="Broccoli" class="w-full h-full object-cover rounded-[50px]" />
+                </div>
+                <div class="col-span-2 row-span-2 bg-yellow-200 rounded-[50px] flex items-center justify-center min-h-[80px] sm:min-h-[120px] lg:min-h-[140px]">
+                    <img src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/95850-48533_Visuals_website_(4).png" alt="Tamago" class="w-full h-full object-cover rounded-[50px]" />
+                </div>
+            </div>
         </div>
     </main>
-    
 
-    <section class="px-10 md:px-[6%] py-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div class="w-full flex flex-col items-center">
-                <div class="w-full flex justify-center mb-6">
-                    <img id="product-image" src="assets/sq.JPG" class="w-[100%] sm:w-[500px]" alt="Product Image">
-                </div>
-                <div class="flex space-x-2 w-[100%] sm:w-[500px] h-[150px] justify-between">
-                    <div class="w-[45%] sm:w-[150px] h-full bg-[#CFCED4] cursor-pointer" onclick="changeImage('https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66272-49667_Inlfuencer-sand-family-670x350px.jpg')">
-                        <img src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66272-49667_Inlfuencer-sand-family-670x350px.jpg" class="w-full h-full object-cover" alt="White">
-                    </div>
-                    <div class="w-[45%] sm:w-[150px] h-full bg-[#5A5862] cursor-pointer" onclick="changeImage('https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66311-87814_gezin-bij-zee-450x300.jpg')">
-                        <img src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66311-87814_gezin-bij-zee-450x300.jpg" class="w-full h-full object-cover" alt="Black">
-                    </div>
-                    <div class="w-[45%] sm:w-[150px] h-full bg-[#967970] cursor-pointer" onclick="changeImage('https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66207-11634_inluencer-met-accessoires-450x300.jpg')">
-                        <img src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66207-11634_inluencer-met-accessoires-450x300.jpg" class="w-full h-full object-cover" alt="Brown">
-                    </div>
-                </div>
-            </div>
-            <div class="w-full">
-                <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">Muwababy Horsi Stroller</h2>
-                <div class="flex items-center mb-6">
-                    <span class="text-lg sm:text-xl line-through text-gray-500 mr-4">RM1399</span>
-                    <span class="text-3xl sm:text-4xl font-bold">RM799</span>
-                </div>
-                <div class="flex space-x-4 sm:space-x-6 mb-6">
-                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#CFCED4] rounded-full cursor-pointer" onclick="changeImage('assets/muwa-white-sq.png')"></div>
-                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#5A5862] rounded-full cursor-pointer" onclick="changeImage('assets/muwa-black-sq.png')"></div>
-                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#967970] rounded-full cursor-pointer" onclick="changeImage('assets/muwa-brown-sq.png')"></div>
-                </div>
-                <div class="flex items-center space-x-4 mt-6 sm:mt-10">
-                    <div class="flex items-center border-2 rounded-[20px] border-[#844D3E]">
-                        <button id="decrease" class="px-4 py-2 text-xl">-</button>
-                        <input id="quantity" type="number" value="1" class="w-10 text-center py-2 md:py-5 border-none" readonly />
-                        <button id="increase" class="px-4 py-2 text-xl">+</button>
-                    </div>
-                    <button class="bg-[#844D3E] text-white px-6 py-3 md:py-5 w-full sm:w-60 md:w-72 rounded-[20px] text-lg font-semibold">Add to Cart</button>
-                </div>
-            </div>
+    <section class="px-10 md:px-[6%] flex flex-col items-center justify-center mt-20 mb-20 h-80">
+        <div class="text-center space-y-6">
+            <p class="text-sm uppercase tracking-wide">Our Stroller</p>
+            <h1 class="text-4xl lg:text-8xl md:text-6xl font-bold">Muwa Horsi Stroller</h1>
+            <p class="w-full mx-auto text-sm text-justify lg:text-center">
+                The Muwa Horsi stroller is designed with both style and functionality in mind. It features a sleek, modern design that ensures you and your baby look chic while on the go. The stroller is built with high-quality, durable materials that provide long-lasting use.
+            </p>
         </div>
-        
-        <script>
-            function changeImage(imageSrc) {
-                const productImage = document.getElementById('product-image');
-                productImage.src = imageSrc;
-            }
-        </script>
     </section>
     
-    
-    <script>
-        function changeImage(imageSrc) {
-            const productImage = document.querySelector('#product-image');
-            productImage.classList.add("opacity-0");
-            setTimeout(() => {
-                productImage.src = imageSrc;
-                productImage.classList.remove("opacity-0");
-            }, 300);
-        }
-        const decreaseButton = document.getElementById('decrease');
-        const increaseButton = document.getElementById('increase');
-        const quantityInput = document.getElementById('quantity');
-        decreaseButton.addEventListener('click', () => {
-            let currentQuantity = parseInt(quantityInput.value);
-            if (currentQuantity > 1) {
-                quantityInput.value = currentQuantity - 1;
-            }
-        });
-        increaseButton.addEventListener('click', () => {
-            let currentQuantity = parseInt(quantityInput.value);
-            quantityInput.value = currentQuantity + 1;
-        });
-    </script>
+    <section class="px-10 md:px-[6%] flex flex-col items-center justify-center mt-20 mb-20">
+        <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="w-full h-auto rounded-lg overflow-hidden">
+                <img src="assets/muwa-black.png" alt="Salmon" class="w-full h-full object-cover" />
+            </div>
+            <div class="w-full h-auto rounded-lg overflow-hidden">
+                <img src="assets/muwa-brown.png" alt="Broccoli" class="w-full h-full object-cover" />
+            </div>
+            <div class="w-full h-auto rounded-lg overflow-hidden">
+                <img src="assets/muwa-white.png" alt="Tamago" class="w-full h-full object-cover" />
+            </div>
+        </div>
+    </section>
 
     <section class="px-10 md:px-[6%] flex items-center justify-center min-h-screen">
         <div class="w-full mt-40">
@@ -600,31 +553,25 @@
         </div>
     </section>
     
-    <section class="px-10 md:px-[6%] flex flex-col items-center justify-center mt-20 mb-20">
-        <div class="w-full h-[80vh] bg-gray-200 rounded-[50px] overflow-hidden relative">
-            <img 
-                src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/97176-02913_header_web__(5).png" 
-                alt="Image Description" 
-                class="w-full h-full object-cover"
-            />
-        </div>
-    </section>
 
+    
     <section class="px-10 md:px-[6%] min-h-[80vh] flex items-center justify-center mt-20 mb-20">
         <div class="w-full flex flex-col md:flex-row gap-8">
-            <div class="flex-1 flex flex-col justify-center space-y-4 text-right">
+            <div class="flex-1 flex flex-col justify-center space-y-4 text-center md:text-right">
                 <p class="text-sm text-gray-600 font-semibold">About Us</p>
                 <h2 class="text-4xl md:text-6xl font-bold">Smart Solutions</h2>
                 <p class="text-gray-600 text-sm mb-4">Muwababy was created to give parents more freedom of movement. We believe in smart solutions that make life easier. Problems are meant to be solved, and that's what our brand focuses on.</p>
                 <p class="text-gray-600 text-sm mb-4">Being a parent often limits your freedom, but Muwababy aims to remove those limitations. Our mission is to help parents move freely and easily with their little ones.</p>
-            
-                <button class="bg-[#844D3E] text-lg text-white px-3 py-3 md:py-5 rounded-[20px] lg:w-2/4 ml-auto">Read about Muwa</button>
-            </div>                     
-            <div class="flex-1 mb-8 md:mb-0">
-                <img src="assets/fold-stroller.png" alt="Image" class="w-[80%] h-auto rounded-[30px]">
+                <button class="bg-[#844D3E] text-lg text-white px-3 py-3 md:py-5 rounded-[20px] w-full sm:w-auto lg:ml-auto lg:w-80">Read about Muwa</button>
+            </div>
+            <div class="flex-1 mb-8 md:mb-0 flex justify-center">
+                <img src="assets/fold-stroller.png" alt="Fold Stroller" class="w-[80%] h-auto rounded-[30px]">
             </div>
         </div>
     </section>
+    
+    
+
 
     
     
